@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Teiler
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=Teiler()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Teiler\r\n
+comment2.params=zahl\ teiler
+comment2.target=boolean\ istTeilerVon(int,\ int)
+comment2.text=\r\n\ \r\n
+comment3.params=zahl
+comment3.target=boolean\ sind2und3teiler(int)
+numComments=4

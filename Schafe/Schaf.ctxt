@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Schaf
+comment0.text=\r\n\ @author\ (Fettullah)\ \r\n
+comment1.params=name
+comment1.target=Schaf(java.lang.String)
+comment2.params=
+comment2.target=int\ getalter()
+comment3.params=
+comment3.target=int\ getenergie()
+comment4.params=
+comment4.target=boolean\ getlebendig()
+comment5.params=
+comment5.target=void\ altern()
+comment5.text=\ \r\n\ Methode\ altern\:\ Das\ Schaf\ wird\ ein\ Jahr\ \u00E4lter\ und\ verliert\ 10\ hunger\ \r\n
+comment6.params=menge
+comment6.target=void\ fuetter(int)
+comment6.text=\r\n\ Methode\ fuettern\:\ Erh\u00F6ht\ die\ Energie\ des\ Schafs.\r\n
+comment7.params=kraft
+comment7.target=void\ schlagen(int)
+comment7.text=\r\n\ Man\ kann\ das\ Schaf\ schlagen\u2026\ (unterschiedlich\ kr\u00E4ftig)\r\n
+comment8.params=
+comment8.target=void\ getgluecklich()
+comment8.text=\r\n\ Fragen\ ob\ das\ Schaf\ gl\u00FCcklich\ ist.\ \u00D6fter\ gegessen\ als\ geschlagen\r\n
+comment9.params=
+comment9.target=void\ gethungrig()
+comment9.text=\r\n\ Schaf\ kann\ Hunrig\ werden.\ Wenn\ Energie\ <\ 50.\r\n
+numComments=10
