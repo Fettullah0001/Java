@@ -46,7 +46,7 @@ public class Schaf
     /**
      * Methode fuettern: Erhöht die Energie des Schafs.
      */
-    public void fuetter(int menge){
+    public void fuettern(int menge){
         if(menge > 0){
             if(_lebendig==true){
                 _energie += menge;
@@ -165,4 +165,14 @@ public class Schaf
     private void durchschnittFuttermenge(){
         int durchschnittFuttermenge = _futtermenge/_gegessen;
     }
+    
+    /**
+     * Get Energie Methode
+     */
+    public int getEnergie(){return _energie;}
+    
+    /**
+     * Schreibt eine Methode, wo das Schaf voll (Energie = 100) gefüttert wird
+     */
+    public void fuetternVoll(){this.fuettern(100);}
 }
