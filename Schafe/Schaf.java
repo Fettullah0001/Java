@@ -119,7 +119,7 @@ public class Schaf
             System.out.println("Bääääähhhhhh");
         }
     }
-    
+
     /**
      * Schaf kann ausschlafen, dafür schreiben wir die Methode boolean ausschlafen(boolean werktag,boolean urlaub)
      * Es schläft aus, wenn es kein Werktag ist oder es ist im Urlaub.
@@ -129,7 +129,7 @@ public class Schaf
             return true;
         }else {return false;}
     }
-    
+
     /**
      * Schaf kann addieren, returns die Summe von a und b,
      * aber wenn a und b gleich sind wird die Summe von beiden verdoppelt und returns.
@@ -138,7 +138,7 @@ public class Schaf
         if(a == b){return (a+b)*2;
         }else{return (a+b);}
     }
-    
+
     /**
      * Schaf kann Differenz zur 21 berechnen.
      * Wenn n größer 21 ist wird Differenz verdoppelt.
@@ -149,7 +149,7 @@ public class Schaf
             return tmp*2;
         }else{return tmp;}
     }
-    
+
     /**
      * Schaf methode returns true wenn parameter a oder b oder die Summe von den Zahlen 10 ergibt.
      */
@@ -158,21 +158,51 @@ public class Schaf
             return true;
         }else {return false;}
     }
-    
+
     /**
      * Berechne die durchschnittliche Futtermenge
      */
     private void durchschnittFuttermenge(){
         int durchschnittFuttermenge = _futtermenge/_gegessen;
     }
-    
+
     /**
      * Get Energie Methode
      */
     public int getEnergie(){return _energie;}
-    
+
     /**
      * Schreibt eine Methode, wo das Schaf voll (Energie = 100) gefüttert wird
      */
     public void fuetternVoll(){this.fuettern(100);}
+
+    /**
+     * Schaf zählt Tage. Für einen Monat im Jahr. Benutzt werden soll eine Switch-Anweisung.
+     */
+    public int tageProMonat(int monat, int jahr){
+        switch(monat){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return 30;
+                
+            default:
+                if(jahr%4==0){
+                    return 29;
+                }else{
+                    return 28;
+                }
+        }
+    }
+    
 }

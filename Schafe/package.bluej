@@ -2,10 +2,10 @@
 dependency1.from=Stall
 dependency1.to=Schaf
 dependency1.type=UsesDependency
-editor.fx.0.height=1033
-editor.fx.0.width=1721
-editor.fx.0.x=-7
-editor.fx.0.y=-7
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=90
 objectbench.width=452
 package.divider.horizontal=0.6001742160278745
