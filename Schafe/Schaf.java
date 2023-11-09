@@ -195,7 +195,7 @@ public class Schaf
             case 9:
             case 11:
                 return 30;
-                
+
             default:
                 if(jahr%4==0){
                     return 29;
@@ -204,5 +204,96 @@ public class Schaf
                 }
         }
     }
-    
+
+    /**
+     * Gibt an, ob die Zeichenkette einen Vokal enthaelt.
+     */
+    public boolean enthaeltVokal(String s){
+        String low = s.toLowerCase();
+        if(low.indexOf('a')>=0){
+            return true;
+        }else if(low.indexOf('e')>=0){
+            return true;
+        }else if(low.indexOf('i')>=0){
+            return true;
+        }else if(low.indexOf('o')>=0){
+            return true;
+        }else if(low.indexOf('u')>=0){
+            return true;
+        }else{
+            return false;        
+        }   
+    }
+
+    /**
+     * Diese Methode liefert true, wenn der übergebene String ein Palindrom ist,sonst false.
+     * @param s ein beliebiger String, darf nicht null sein
+     */
+    public boolean istPalindrom(String s){
+        boolean palindrom = false;
+        String lowCase = s.toLowerCase();
+        int versuche = s.length()/2;
+        int anfang = 0;
+        int ende = s.length()-1;
+        while(true){
+            if(versuche == 0){break;}
+            if(lowCase.charAt(anfang) == lowCase.charAt(ende)){
+                palindrom = true;
+            }else{return false;}
+            anfang++;
+            ende--;
+            versuche--;
+        }
+        return palindrom;
+    }
+
+    /**
+     * Liefert fuer einen uebergebenen String die Anzahl der Auftreten des ebenfalls uebergebenen Zeichens innerhalb des Strings.
+     * @param vonChar das Zeichen, dessen Auftreten gezaehlt werden soll 
+     * @param inString der String, in dem gezaehlt werden soll
+     */
+    public int anzahlAuftreten(char vonChar, String inString){
+        int anzahl = 0;
+        if(inString.indexOf(vonChar) >= 0){
+            for(int i = 0; i < inString.length(); i++){
+                if(inString.charAt(i)==vonChar){
+                    anzahl++;
+                }
+            }
+        }
+        return anzahl;
+    }
+
+    /**
+     * Liefert nur die Vokale der uebergebenen Zeichenkette. Fuer den Parameter "HAllo Welt!" liefert diese Methode beispielweise den String "Aoe".
+     * @param eine beliebige Zeichenkette; darf nicht null sein und keine Umlaute enthalten.
+     */
+    public String nurVokale(String wort){
+        String ausgabe = "";
+        for(int i = 0; i < wort.length(); i++){
+            if(wort.charAt(i) == 'a' || wort.charAt(i) == 'A'){ausgabe += wort.charAt(i);
+            }else if(wort.charAt(i) == 'e' || wort.charAt(i) == 'E'){ausgabe += wort.charAt(i);
+            }else if(wort.charAt(i) == 'i' || wort.charAt(i) == 'I'){ausgabe += wort.charAt(i);
+            }else if(wort.charAt(i) == 'o' || wort.charAt(i) == 'O'){ausgabe += wort.charAt(i);
+            }else if(wort.charAt(i) == 'u' || wort.charAt(i) == 'U'){ausgabe += wort.charAt(i);
+            }
+        }
+        return ausgabe;
+    }
+
+    /**
+     * Liefert eine neue Zeichenkette aus der alle Vokale entfernt wurden. Fuer den Parameter "Hallo Welt!" liefert diese Methode beispielweise den String "Hll Wlt!". 
+     * @param eine beliebige Zeichenkette; darf nicht null sein und keine Umlaute enthalten.
+     */
+    public String entferneVokale(String s){
+        return null;
+    }
+
+    /**
+     * Gibt an, ob in einer Zeichenkette mindestens ein Zeichen, direkt aufeinander folgend, doppelt vorkommt. 
+     * @param eine beliebige Zeichenkette, darf nicht null sein.
+     */
+    public boolean enthaeltDoppelzeichen(String s){
+        return false;
+    }
 }
