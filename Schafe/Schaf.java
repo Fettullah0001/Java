@@ -286,7 +286,21 @@ public class Schaf
      * @param eine beliebige Zeichenkette; darf nicht null sein und keine Umlaute enthalten.
      */
     public String entferneVokale(String s){
-        return null;
+        String ausgabe = "";
+        for(int i = 0 ; i < s.length();i++){
+            if(istVokal(s,i)){ //Tue nichts
+            }else{ausgabe += s.charAt(i);}
+        }
+        return ausgabe;
+    }
+
+    /**
+     * gibt zurück ob an stelle i des String s ein Vokal ist.
+     */
+    private boolean istVokal(String s, int i){
+        if(s.charAt(i) == 'a' || s.charAt(i) == 'A' || s.charAt(i) == 'e' || s.charAt(i) == 'E' || s.charAt(i) == 'i' || s.charAt(i) == 'I' || s.charAt(i) == 'o' || s.charAt(i) == 'O'|| s.charAt(i) == 'u' || s.charAt(i) == 'U'){
+            return true;
+        }else{return false;}
     }
 
     /**
@@ -294,6 +308,12 @@ public class Schaf
      * @param eine beliebige Zeichenkette, darf nicht null sein.
      */
     public boolean enthaeltDoppelzeichen(String s){
-        return false;
+        boolean gefunden = false;
+        for(int i = 0; i < s.length()-1; i++){
+            if(s.charAt(i) == s.charAt(i+1)){
+                gefunden = true;
+            }
+        }
+        return gefunden;
+        }
     }
-}
