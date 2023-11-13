@@ -2,7 +2,7 @@
 /**
  * @author (Fettullah) 
  */
-public class Schaf
+public class Schaf implements Tier
 {
     private final String _name;
     private int _alter;

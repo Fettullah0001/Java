@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Tier
+comment0.text=\r\n\ Tragen\ Sie\ hier\ eine\ Beschreibung\ des\ Interface\ Tier\ ein.\r\n
+comment1.params=menge
+comment1.target=void\ fuettern(int)
+comment1.text=\r\n\ Das\ tier\ wird\ gef\u00FCttert\r\n
+comment2.params=kraft
+comment2.target=void\ schlagen(int)
+comment2.text=\r\n\ Das\ Tier\ wird\ geschlagen\r\n
+numComments=3

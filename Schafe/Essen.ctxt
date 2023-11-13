@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Essen
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Essen.\r\n
+comment1.params=
+comment1.target=Essen()
+comment1.text=\r\n\ Konstruktor\r\n
+comment2.params=
+comment2.target=int\ getMenge()
+comment3.params=
+comment3.target=int\ getKalorien()
+numComments=4

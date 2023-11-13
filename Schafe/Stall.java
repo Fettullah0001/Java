@@ -9,6 +9,11 @@ public class Stall
     private Schaf _quartier2;
     private Schaf _quartier3;
 
+    private Kuh _kuh1;
+    private Kuh _kuh2;
+    private Kuh _kuh3;
+    private Kuh _kuh4;
+
     public Stall()
     {
 
@@ -98,4 +103,35 @@ public class Stall
         }else{return schaf2;}
     }
     
+    /**
+     * Wenn Vier Kuehe im Stall sind. Schalfen Sie und gehen aus dem Stall.
+     */
+    public void setzeKuh(Kuh kuh){
+        if(_kuh1 == null){
+            _kuh1 = kuh;
+        }else if(_kuh2 == null){
+            _kuh2 = kuh;
+        }else if(_kuh3 == null){
+            _kuh3 = kuh;
+        }else if(_kuh4 == null){
+            _kuh4 = kuh;
+        }
+        if(_kuh4 != null){
+            _kuh1.schlafen();
+            _kuh2.schlafen();
+            _kuh3.schlafen();
+            _kuh4.schlafen();
+            entferneAlleKuehe();
+        }
+    }
+    
+    /**
+     * entfernt alle Kuehe aus dem Stall.
+     */
+    private void entferneAlleKuehe(){
+        _kuh1 = null;
+        _kuh2 = null;
+        _kuh3 = null;
+        _kuh4 = null;
+    }
 }

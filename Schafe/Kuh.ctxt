@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Kuh
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Kuh.\r\n
+comment1.params=
+comment1.target=Kuh()
+comment1.text=\r\n\ Konstruktor\r\n
+comment2.params=essen
+comment2.target=void\ fuettern(Essen)
+comment2.text=\r\n\ wird\ fuettern\ aufgerufen\ bekommt\ die\ Kuh\ menge*Kalorie\ Energie\r\n
+comment3.params=menge
+comment3.target=void\ fuettern(int)
+comment3.text=\r\n\ fuettern\ mit\ einer\ menge\ int\ mal\ Kalorien\ 4\ zu\ Energie\r\n
+comment4.params=
+comment4.target=void\ machMuh()
+comment4.text=\r\n\ gibt\ auf\ der\ Konsole\ Muhh\ aus\r\n
+comment5.params=
+comment5.target=void\ schlafen()
+comment5.text=\r\n\ Schlafen\ regeneriert\ der\ Kuh\ 5\ Energie;\r\n
+comment6.params=kraft
+comment6.target=void\ schlagen(int)
+comment6.text=\r\n\ Man\ kann\ das\ Kuh\ schlagen\u2026\ (unterschiedlich\ kr\u00E4ftig)\r\n
+numComments=7
