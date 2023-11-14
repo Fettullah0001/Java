@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ListenStall
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ ListenStall.\r\n
+comment1.params=
+comment1.target=ListenStall()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ ListenStall\r\n
+comment2.params=schaf
+comment2.target=void\ setzeSchaf(Schaf)
+comment3.params=
+comment3.target=void\ schafStallFuettern()
+comment3.text=\r\n\ Schafe\ im\ Stall\ werden\ in\ einer\ Erweiterten\ for-Schleife\ mit\ der\ Menge\ 10\ durch\ aufruf\r\n\ der\ fuettern\ methode\ von\ Schaf\ gefuettert.\r\n
+numComments=4
